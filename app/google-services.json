@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "783930018544",
+    "project_id": "testfactum-2fed1",
+    "storage_bucket": "testfactum-2fed1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783930018544:android:5af3115db9321dd0455035",
+        "android_client_info": {
+          "package_name": "com.itcomca.testfactum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783930018544-q2ccehqphojmf5kucjg472va925ldvmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2IgD3OVvHfWmmxmQu5El2jd4fPkorojU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783930018544-q2ccehqphojmf5kucjg472va925ldvmq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

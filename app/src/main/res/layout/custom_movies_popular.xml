@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:id="@+id/row"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/poster"
+        android:layout_width="47dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="24dp"
+        android:adjustViewBounds="true"
+        tools:srcCompat="@drawable/avengers" />
+
+    <TextView
+        android:layout_toEndOf="@+id/poster"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textTitle"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Avenger: Endgame"
+        app:layout_constraintStart_toEndOf="@+id/poster"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_below="@+id/textTitle"
+        android:layout_toEndOf="@+id/poster"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="18dp"
+        android:id="@+id/releaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="April 26, 2019"
+        app:layout_constraintStart_toEndOf="@+id/poster"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <TextView
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/releaseDate"
+        android:layout_toEndOf="@+id/poster"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="18dp"
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3h 1m"
+        app:layout_constraintStart_toEndOf="@+id/poster"
+        app:layout_constraintTop_toBottomOf="@+id/releaseDate" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray" />
+
+    <com.backbase.assignment.ui.custom.RatingView
+
+        android:id="@+id/rating"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</RelativeLayout>

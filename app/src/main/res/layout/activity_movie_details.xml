@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <!--<variable
+            name="viewDetail"
+            type="com.itcomca.testfactum.views.detailsactivity." />-->
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryTransparency"
+        tools:context=".ui.DetailActivity">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_left_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:padding="2dp"
+            android:layout_marginTop="71dp"
+            android:id="@+id/wraperPoster"
+            android:layout_width="135dp"
+            android:layout_height="201dp"
+            android:background="@drawable/custom_margin_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/poster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/avengers" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:textAlignment="center"
+            android:layout_marginTop="6dp"
+            android:textAppearance="@style/BigTitle"
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Avengers: Endgame"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wraperPoster" />
+
+        <TextView
+            android:textAppearance="@style/BugSubtitle"
+            android:id="@+id/textSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="April 29, 2019  - 3h 1m"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="34dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSubtitle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overview"
+                android:textAppearance="@style/BigTitle" />
+
+            <TextView
+                android:id="@+id/textSinapsis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store."
+                android:textAppearance="@style/BugSubtitle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lblShips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="34dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/ship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Ships"
+                android:text="ADVENTURE" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
